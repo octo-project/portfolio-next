@@ -29,6 +29,7 @@ export const projects: Project[] = [
     screenShootType: "web",
     projectType: "web",
     about: {
+      demoUrl: "https://mathieu-portf.netlify.app/",
       description: "projectPortfolioOverview",
       missions: [
         "projectPortfolioMission1",
@@ -61,7 +62,7 @@ export const projects: Project[] = [
     screenShootType: "web",
     projectType: "desktop",
     about: {
-      demoUrl: "/api/download/vatsy_0.1.6_x64-setup.exe",
+      demoUrl: "https://github.com/octo-project/portfolio-next/releases/download/v0.1.7/vatsy_0.1.7_x64_en-US.msi",
       gitHubRepository: "https://git-lab.com/hmathieutsialonina/podcast-app",
       description: "projectVatsyOverview",
       missions: [
