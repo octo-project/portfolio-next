@@ -62,7 +62,7 @@ export const projects: Project[] = [
     screenShootType: "web",
     projectType: "desktop",
     about: {
-      demoUrl: "https://github.com/octo-project/portfolio-next/releases/download/V0.1.7/vatsy_0.1.7_x64_en-US.msi",
+      demoUrl: "https://github.com/octo-project/portfolio/releases/download/V0.1.0/vatsy_0.1.7_x64_en-US.msi",
       gitHubRepository: "https://git-lab.com/hmathieutsialonina/podcast-app",
       description: "projectVatsyOverview",
       missions: [
@@ -85,19 +85,16 @@ export const projects: Project[] = [
       technos: ["React", "Tailwind", "Rust", "Tauri", "Typescript", "Sqlite"],
     },
     screenShoots: [
-      { label: "First page", image: "/images/projects/vatsy/page-1.png" },
-      { label: "Addition", image: "/images/projects/vatsy/addition.png" },
-      { label: "Bol renverser", image: "/images/projects/vatsy/bol-renverser.png" },
-      { label: "Liste soupe", image: "/images/projects/vatsy/liste-soupe.png" },
-      { label: "Category de depense", image: "/images/projects/vatsy/category-de-depense.png" },
-      { label: "Historique de vente", image: "/images/projects/vatsy/historique-de-vente.png" },
-      { label: "Historique de depense", image: "/images/projects/vatsy/historique-de-depense.png" },
-      { label: "Ask password", image: "/images/projects/vatsy/ask-password.png" },
-      { label: "Selection quantity", image: "/images/projects/vatsy/selection-quantity.png" },
-      { label: "Date filter", image: "/images/projects/vatsy/date-filter.png" },
-      { label: "Purchase filter", image: "/images/projects/vatsy/purchase-filter.png" },
-      { label: "Table filter", image: "/images/projects/vatsy/table-filter.png" },
-      { label: "See invoice", image: "/images/projects/vatsy/see-invoice.png" },
+      { label: "Addition", image: "/images/projects/vatsy/addition.webp" },
+      { label: "Table disponible", image: "/images/projects/vatsy/table_disponible.webp" },
+      { label: "Historique de vente", image: "/images/projects/vatsy/vente.webp" },
+      { label: "Table details", image: "/images/projects/vatsy/table_details.webp" },
+      { label: "IA assistant", image: "/images/projects/vatsy/ai_screen.webp" },
+      { label: "Commande", image: "/images/projects/vatsy/commander.webp" },
+      { label: "Suppression commande", image: "/images/projects/vatsy/suppression_commande.webp" },
+      { label: "Accès pro", image: "/images/projects/vatsy/secured_access.webp" },
+      { label: "Installation", image: "/images/projects/vatsy/space-required.webp" },
+      { label: "Taille de l'installeur", image: "/images/projects/vatsy/exe-size.webp" },
     ],
   },
   {
@@ -109,7 +106,7 @@ export const projects: Project[] = [
     screenShootType: "web",
     projectType: "web",
     about: {
-      demoUrl: "https://youtube/asdas6a5465/podcast-app-web",
+      // demoUrl: "https://youtube/asdas6a5465/podcast-app-web",
       gitHubRepository: "https://git-lab.com/hmathieutsialonina/podcast-app",
       description: "projectGestionFondOverview",
       missions: [
@@ -152,7 +149,7 @@ export const projects: Project[] = [
     screenShootType: "mobile",
     projectType: "extension",
     about: {
-      demoUrl: "https://youtube/asdas6a5465/podcast-app-web",
+      // demoUrl: "https://youtube/asdas6a5465/podcast-app-web",
       gitHubRepository: "https://git-lab.com/hmathieutsialonina/podcast-app",
       description: "projectBuyerPersonaOverview",
       missions: ["projectBuyerPersonaMission1", "projectBuyerPersonaMission2"],
