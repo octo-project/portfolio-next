@@ -62,7 +62,7 @@ export const projects: Project[] = [
     screenShootType: "web",
     projectType: "desktop",
     about: {
-      demoUrl: "https://github.com/octo-project/portfolio-next/releases/download/v0.1.7/vatsy_0.1.7_x64_en-US.msi",
+      demoUrl: "https://github.com/octo-project/portfolio-next/releases/download/V0.1.7/vatsy_0.1.7_x64_en-US.msi",
       gitHubRepository: "https://git-lab.com/hmathieutsialonina/podcast-app",
       description: "projectVatsyOverview",
       missions: [
