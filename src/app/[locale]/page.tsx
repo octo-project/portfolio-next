@@ -1,13 +1,18 @@
 "use client";
 
 import { useRef } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import TechnoChip from "@/components/TechnoChip";
 
 export default function CvPage() {
   const t = useTranslations();
+  const locale = useLocale();
+  const cvUrl =
+    locale === "fr"
+      ? "https://drive.google.com/file/d/1XVhbm9T92qH1D3NzC2YqZ_l-74lhXwAD/view?usp=drive_link"
+      : "https://drive.google.com/file/d/1n8ylMkNrctG3zb1YZJ-I4DYkCehdx1wO/view?usp=drive_link";
   const parcourRef = useRef<HTMLElement>(null);
   const experienceRef = useRef<HTMLElement>(null);
   const qualityRef = useRef<HTMLElement>(null);
@@ -44,11 +49,22 @@ export default function CvPage() {
             <p className="max-w-lg text-base leading-relaxed text-text-muted">
               {t("cvDescription_1")}
             </p>
-            <div className="flex items-center gap-3 animate-slide-up delay-300">
+            <div className="flex flex-wrap items-center gap-3 animate-slide-up delay-300">
               <div className="flex items-baseline gap-1.5 rounded-full bg-primary/10 px-5 py-2">
                 <span className="text-3xl font-bold text-primary">05</span>
                 <span className="text-sm font-medium text-primary/80">Ans d&apos;experience</span>
               </div>
+              <a
+                href={cvUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-white no-underline shadow-md shadow-primary/20 transition-all duration-200 hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5"
+              >
+                <svg className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                {t("downloadCv")}
+              </a>
             </div>
           </div>
         </div>
