@@ -20,6 +20,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Download CV Button
+
+The hero section includes a "Download CV" button that links to a Google Drive-hosted CV file. The link adapts based on the current locale:
+
+- **French** (`/fr`): [CV in French](https://drive.google.com/file/d/1XVhbm9T92qH1D3NzC2YqZ_l-74lhXwAD/view?usp=drive_link)
+- **English** (`/en`): [CV in English](https://drive.google.com/file/d/1n8ylMkNrctG3zb1YZJ-I4DYkCehdx1wO/view?usp=drive_link)
+
+The locale is detected via `useLocale()` from `next-intl` and the correct URL is selected automatically.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
