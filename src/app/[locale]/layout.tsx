@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "TSIALONINA Heriniaina Mathieu - Portfolio",
   description:
     "Développeur Full Stack - J'aide les startups et PME à transformer leurs idées en applications web performantes",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default async function LocaleLayout({
